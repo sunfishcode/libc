@@ -763,6 +763,8 @@ extern "C" {
         path: *const c_char,
         relative_path: *mut *const c_char,
     ) -> c_int;
+    pub fn __wasilibc_openat_nomode(fd: c_int, path: *const c_char, oflag: c_int)-> c_int;
+    pub fn __wasilibc_open_nomode(path: *const c_char, oflag: c_int)-> c_int;
     pub fn __wasilibc_tell(fd: c_int) -> ::off_t;
 
     pub fn arc4random() -> u32;
