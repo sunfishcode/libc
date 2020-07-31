@@ -309,6 +309,10 @@ pub const EXDEV: c_int = 75;
 pub const ENOTCAPABLE: c_int = 76;
 pub const EOPNOTSUPP: c_int = ENOTSUP;
 pub const EWOULDBLOCK: c_int = EAGAIN;
+pub const F_OK: c_int = 0;
+pub const X_OK: c_int = 1;
+pub const W_OK: c_int = 2;
+pub const R_OK: c_int = 4;
 
 #[cfg_attr(
     feature = "rustc-dep-of-std",
